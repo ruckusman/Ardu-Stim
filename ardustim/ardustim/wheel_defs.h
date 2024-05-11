@@ -134,6 +134,9 @@
    JEEP2000,  /* Jeep 4.0 6cyl aka jeep2000 */
    BMW_N20, //BMW N20 58x and custom cam wheels
    VIPER_96_02, // Dodge Viper 1996-2002 wheel pattern
+   YAMAHA_FZR250_2KR, /* Yamaha FZR250 2KR 1986 - 1988 */
+   Yamaha_FZR250_3LN, /* Yamaha FZR250 3LN 1989 - 1996 */
+   Yamaha_YZF600R_4JH, /* Yamaha YZF600R 4JH 1994 - 1996 */
    MAX_WHEELS,
  }WheelType;
 
@@ -199,6 +202,9 @@
  const char Jeep_2000_friendly_name[] PROGMEM = "Jeep 2000";
  const char BMW_N20_friendly_name[] PROGMEM = "BMW N20";
  const char VIPER9602_friendly_name[] PROGMEM = "Dodge Viper V10 1996-2002";
+ const char YAMAHA_FZR250_2KR_friendly_name[] PROGMEM = "Yamaha FZR250 2KR 1986 - 1988"
+ const char YAMAHA_FZR250_3LN_friendly_name[] PROGMEM = "Yamaha FZR250 3LN 1989 - 1996"
+ const char Yamaha_YZF600R_4JH_friendly_name[] PROGMEM "Yamaha YZF600R 4JH 1994 - 1996"
 
  /* Very simple 50% duty cycle */
  const unsigned char dizzy_four_cylinder[] PROGMEM = 
@@ -1462,6 +1468,71 @@
       0,0,1,1,0,0,0,0,1,1, //51-55
       0,0,0,0,0,0,0,0,0,0, //56-60
    };
-
+  const unsigned char YAMAHA_FZR250_2KR[] PROGMEM = 
+/* This is a placeholder for the FZR250 2KR rotor trigger signal */
+/* The primary, but not sole purpose is to be able to interrogate the OEM TCI to accurately */
+/* capture the spark map for Speeduino, which would hopefully enable it to be used for ignition only as */ 
+/* first step towards full EFI */
+/*It is based upon the DSM 420a even tooth trigger with the cam trigger removed */
+/*if this text is still here then the code below hasn't yet been updated with the */
+/*updated trigger settings */
+ { /* Every number represents 5 degrees */
+      0,0,0,0,0,0,0,0,0,0,0,2,
+      2,2,2,2,2,2,2,2,2,3,3,2,
+      2,3,3,2,2,3,3,2,2,3,3,2,
+      2,2,2,2,2,0,0,0,0,0,0,1,
+      1,1,1,1,1,1,1,1,1,1,1,0,
+      0,1,1,0,0,1,1,0,0,1,1,0,
+      0,0,0,0,0,0,0,0,0,0,0,2,
+      2,2,2,2,2,2,2,2,2,3,3,2,
+      2,3,3,2,2,3,3,2,2,3,3,2,
+      2,2,2,2,2,2,2,2,2,2,2,3,
+      3,3,3,3,3,1,1,1,1,1,1,0,
+      0,1,1,0,0,1,1,0,0,1,1,0
+   }; 
+const unsigned char YAMAHA_FZR250_3LN[] PROGMEM = 
+/* This is a placeholder for the FZR250 3LN rotor trigger signal */
+/* The primary, but not sole purpose is to be able to interrogate the OEM TCI to accurately */
+/* capture the spark map for Speeduino, which would hopefully enable it to be used for ignition only as */ 
+/* first step towards full EFI */
+/*It is based upon the DSM 420a even tooth trigger with the cam trigger removed */
+/*if this text is still here then the code below hasn't yet been updated with the */
+/*updated trigger settings */
+ { /* Every number represents 5 degrees */
+      0,0,0,0,0,0,0,0,0,0,0,2,
+      2,2,2,2,2,2,2,2,2,3,3,2,
+      2,3,3,2,2,3,3,2,2,3,3,2,
+      2,2,2,2,2,0,0,0,0,0,0,1,
+      1,1,1,1,1,1,1,1,1,1,1,0,
+      0,1,1,0,0,1,1,0,0,1,1,0,
+      0,0,0,0,0,0,0,0,0,0,0,2,
+      2,2,2,2,2,2,2,2,2,3,3,2,
+      2,3,3,2,2,3,3,2,2,3,3,2,
+      2,2,2,2,2,2,2,2,2,2,2,3,
+      3,3,3,3,3,1,1,1,1,1,1,0,
+      0,1,1,0,0,1,1,0,0,1,1,0
+   }; 
+const unsigned char YAMAHA_YZF600R_4JH[] PROGMEM = 
+/* This is a placeholder for the YZF600R 4JH rotor trigger signal */
+/* The primary, but not sole purpose is to be able to interrogate the OEM TCI to accurately */
+/* capture the spark map for Speeduino, which would hopefully enable it to be used for ignition only as */ 
+/* first step towards full EFI */
+/*It is based upon the DSM 420a even tooth trigger with the cam trigger removed */
+/*if this text is still here then the code below hasn't yet been updated with the */
+/*updated trigger settings */
+ { /* Every number represents 5 degrees */
+      0,0,0,0,0,0,0,0,0,0,0,2,
+      2,2,2,2,2,2,2,2,2,3,3,2,
+      2,3,3,2,2,3,3,2,2,3,3,2,
+      2,2,2,2,2,0,0,0,0,0,0,1,
+      1,1,1,1,1,1,1,1,1,1,1,0,
+      0,1,1,0,0,1,1,0,0,1,1,0,
+      0,0,0,0,0,0,0,0,0,0,0,2,
+      2,2,2,2,2,2,2,2,2,3,3,2,
+      2,3,3,2,2,3,3,2,2,3,3,2,
+      2,2,2,2,2,2,2,2,2,2,2,3,
+      3,3,3,3,3,1,1,1,1,1,1,0,
+      0,1,1,0,0,1,1,0,0,1,1,0
+   }; 
 
   #endif
