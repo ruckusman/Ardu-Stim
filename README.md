@@ -6,7 +6,9 @@
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/speeduino/Ardu-Stim/blob/master/LICENSE)
 [![https://img.shields.io/discord/879495735912071269 ](https://img.shields.io/discord/879495735912071269?label=Discord&logo=Discord)](https://discord.gg/YWCEexaNDe)
 
-##### This is the Speeduino fork of the ardustim engine simulator.
+##### This is a fork of the Speeduino fork of the ardustim engine simulator.
+
+Adding crank rotor trigger signal configuration(s) for the Yamaha FZR250R and Yamaha YZF600R
 </div>
 
 ## Ardu-Stim
