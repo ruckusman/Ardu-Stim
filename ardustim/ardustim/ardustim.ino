@@ -119,6 +119,9 @@ wheels Wheels[MAX_WHEELS] = {
   { Jeep_2000_friendly_name, jeep_2000, 1.5, 360, 720},
   { BMW_N20_friendly_name, bmw_n20, 1.0, 240, 720},
   { VIPER9602_friendly_name, viper9602wheel, 1.0, 240, 720},
+  { YAMAHA_FZR250_2KR_friendly_name, Yamaha_FZR250_2KR, 0.6, 144, 720}, /* This is a placeholder */
+  { YAMAHA_FZR250_2KR_friendly_name, Yamaha_FZR250_3LN, 0.6, 144, 720}, /* This is a placeholder */
+  { YAMAHA_YZF600R_4JH_friendly_name, Yamaha_YZF600R_4JH, 0.6, 144, 720}, /* This is a placeholder */
 };
 
 /* Initialization */
