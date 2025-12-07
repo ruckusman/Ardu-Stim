@@ -209,9 +209,9 @@
  const char VIPER9602_friendly_name[] PROGMEM = "Dodge Viper V10 1996-2002";
  const char thirty_six_minus_two_with_second_trigger_friendly_name[] PROGMEM = "36-2 with 1 tooth cam";
  const char GM_40_Tooth_Trans_OSS_friendly_name[] PROGMEM = "GM 40 tooth OSS wheel for Transmissions";
- const char YAMAHA_FZR250_2KR_friendly_name[] PROGMEM = "Yamaha FZR250 2KR 1986 - 1988";
- const char YAMAHA_FZR250_3LN_friendly_name[] PROGMEM = "Yamaha FZR250 3LN 1989 - 1996";
- const char Yamaha_YZF600R_4JH_friendly_name[] PROGMEM = "Yamaha YZF600R 4JH 1994 - 1996";
+ const char YAMAHA_FZR250_2KR_friendly_name[] PROGMEM = "YAMAHA_FZR250_2KR";
+ const char YAMAHA_FZR250_3LN_friendly_name[] PROGMEM = "YAMAHA_FZR250_3LN";
+ const char YAMAHA_YZF600R_4JH_friendly_name[] PROGMEM = "YAMAHA_YZF600R_4JH";
 
  /* Very simple 50% duty cycle */
  const unsigned char dizzy_four_cylinder[] PROGMEM = 
