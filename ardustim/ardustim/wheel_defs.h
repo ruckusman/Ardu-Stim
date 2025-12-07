@@ -1550,12 +1550,10 @@
       1,0,1,0,1,0,1,0,1,0, // Teeth 31-35
       1,0,1,0,1,0,1,0,1,0, // Teeth 36-40
    };
+   /* updated trigger settings */
+   /* Every number represents 2 degrees */
   const unsigned char YAMAHA_FZR250_2KR[] PROGMEM = 
-  /* The primary, but not sole purpose is to be able to interrogate the OEM TCI to accurately */
-  /* capture the spark map for Speeduino, which would hopefully enable it to be used for ignition only as */  
-  /* first step towards full EFI */
-  /* updated trigger settings */
-   { /* Every number represents 2 degrees */
+   { 
       0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #4 fired #1 wasted spark */
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
@@ -1575,11 +1573,13 @@
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,1,1,1,0,0,0, /* Trigger #4 - 10 degrees BTDC #1 firing #4 wasted spark */
    }; 
-  const unsigned char YAMAHA_FZR250_3LN[] PROGMEM = 
   /* The primary, but not sole purpose is to be able to interrogate the OEM TCI to accurately */
   /* capture the spark map for Speeduino, which would hopefully enable it to be used for ignition only as */ 
   /* first step towards full EFI */
-   { /* Every number represents 2 degrees */
+  /* Every number represents 2 degrees */
+  const unsigned char YAMAHA_FZR250_3LN[] PROGMEM = 
+  
+   { 
       0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #4 fired #1 wasted spark */
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
@@ -1598,14 +1598,16 @@
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,1,1,1,0,0,0, /* Trigger #4 - 10 degrees BTDC #1 firing #4 wasted spark */
-   }; 
-  const unsigned char YAMAHA_YZF600R_4JH[] PROGMEM = 
+   };
   /* This is a placeholder for the YZF600R 4JH rotor trigger signal - the trigger sequence is yet to be verified */
   /* The primary, but not sole purpose is to be able to interrogate the OEM TCI to accurately */
   /* capture the spark map for Speeduino, which would hopefully enable it to be used for ignition only as */ 
   /* first step towards full EFI */
   /* updated trigger settings */
-   { /* Every number represents 2 degrees */
+  /* Every number represents 2 degrees */
+  const unsigned char YAMAHA_YZF600R_4JH[] PROGMEM = 
+  
+   { 
       0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #4 fired #1 wasted spark */
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
