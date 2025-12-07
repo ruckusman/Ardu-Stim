@@ -1555,7 +1555,7 @@
    /* Every number represents 2 degrees */
   const unsigned char YAMAHA_FZR250_2KR[] PROGMEM = 
    { 
-      0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #4 fired #1 wasted spark */
+      0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #1 fired #4 wasted spark */
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0, /* 80 degrees ATDC */
@@ -1563,7 +1563,7 @@
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
-      0,0,0,0,0,1,1,1,0,0, /* Trigger #2 10 degrees BTDC #2 firing #3 wasted spark */ 
+      0,0,0,0,0,1,1,1,0,0, /* Trigger #2 10 degrees BTDC #3 firing #2 wasted spark */ 
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
@@ -1572,7 +1572,7 @@
       1,1,1,1,1,1,1,1,1,1, /* 40 degree duration */
       0,0,0,0,0,0,0,0,0,0, /* 50 degree duration */
       0,0,0,0,0,0,0,0,0,0, 
-      0,0,0,0,0,1,1,1,0,0, /* Trigger #4 - 10 degrees BTDC #1 firing #4 wasted spark */
+      0,0,0,0,0,1,1,1,0,0, /* Trigger #4 - 10 degrees BTDC #4 firing #1 wasted spark */
    }; 
 
   /* The primary, but not sole purpose is to be able to interrogate the OEM TCI to accurately */
@@ -1582,7 +1582,7 @@
   const unsigned char YAMAHA_FZR250_3LN[] PROGMEM = 
   
    { 
-      0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #4 fired #1 wasted spark */
+      0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #1 fired #4 wasted spark */
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0, /* 80 degrees ATDC */
@@ -1590,7 +1590,7 @@
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
-      0,0,0,0,0,1,1,1,0,0, /* Trigger #2 10 degrees BTDC #2 firing #3 wasted spark */ 
+      0,0,0,0,0,1,1,1,0,0, /* Trigger #2 10 degrees BTDC #3 firing #2 wasted spark */ 
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
@@ -1599,7 +1599,7 @@
       1,1,1,1,1,1,1,1,1,1, /* 40 degree duration */
       0,0,0,0,0,0,0,0,0,0, /* 50 degree duration */
       0,0,0,0,0,0,0,0,0,0, 
-      0,0,0,0,0,1,1,1,0,0, /* Trigger #4 - 10 degrees BTDC #1 firing #4 wasted spark */
+      0,0,0,0,0,1,1,1,0,0, /* Trigger #4 - 10 degrees BTDC #4 firing #1 wasted spark */
    };
 
   /* This is a placeholder for the YZF600R 4JH rotor trigger signal - the trigger sequence is yet to be verified */
@@ -1611,7 +1611,7 @@
   const unsigned char YAMAHA_YZF600R_4JH[] PROGMEM = 
   
    { 
-      0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #4 fired #1 wasted spark */
+      0,0,0,0,0,0,0,0,0,0, /* TDC 10 degrees after #1 fired #4 wasted spark */
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0, /* 80 degrees ATDC */
@@ -1619,7 +1619,7 @@
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
-      0,0,0,0,0,1,1,1,0,0, /* Trigger #2 10 degrees BTDC #2 firing #3 wasted spark */ 
+      0,0,0,0,0,1,1,1,0,0, /* Trigger #2 10 degrees BTDC #3 firing #2 wasted spark */ 
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
       0,0,0,0,0,0,0,0,0,0,
@@ -1628,6 +1628,6 @@
       1,1,1,1,1,1,1,1,1,1, /* 40 degree duration */
       0,0,0,0,0,0,0,0,0,0, /* 50 degree duration */
       0,0,0,0,0,0,0,0,0,0, 
-      0,0,0,0,0,1,1,1,0,0, /* Trigger #4 - 10 degrees BTDC #1 firing #4 wasted spark */
+      0,0,0,0,0,1,1,1,0,0, /* Trigger #4 - 10 degrees BTDC #4 firing #1 wasted spark */
 };
 #endif
