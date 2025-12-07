@@ -122,9 +122,9 @@ wheels Wheels[MAX_WHEELS] = {
   { VIPER9602_friendly_name, viper9602wheel, 1.0, 240, 720},
   { thirty_six_minus_two_with_second_trigger_friendly_name, thirty_six_minus_two_with_second_trigger, 0.6, 144, 720 },
   { GM_40_Tooth_Trans_OSS_friendly_name, GM40toothOSS, 1.0, 80, 360 },
-  { YAMAHA_FZR250_2KR_friendly_name, FZR250_2KR, 0.06667, 180, 360 }, 
-  { YAMAHA_FZR250_2KR_friendly_name, FZR250_3LN, 0.06667, 180, 360 }, 
-  { YAMAHA_YZF600R_4JH_friendly_name, YZF600R_4JH, 0.06667, 180, 360 }, 
+  { YAMAHA_FZR250_2KR_friendly_name, YAMAHA_FZR250_2KR, 0.06667, 180, 360 }, 
+  { YAMAHA_FZR250_2KR_friendly_name, YAMAHA_FZR250_3LN, 0.06667, 180, 360 }, 
+  { YAMAHA_YZF600R_4JH_friendly_name, YAMAHA_YZF600R_4JH, 0.06667, 180, 360 }, 
 };
 
 /* Initialization */
